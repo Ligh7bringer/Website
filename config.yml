@@ -1,5 +1,5 @@
 # Site settings
-baseurl: https://www.example.com/
+baseurl: https://sgeorgiev.netlify.com/
 themesDir: ./themes/
 languageCode: en
 metaDataFormat: yaml
