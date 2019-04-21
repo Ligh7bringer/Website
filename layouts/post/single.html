@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+<div class="post" data-disqus="{{ .Site.DisqusShortname }}">
+
+  <div class="scroll-progress"></div>
+
+  <div class="wrap">
+    <header class="post__header">
+      <h2 class="post__title">{{ .Title }}</h2>
+      <p>Published <time>{{ .Date.Format "January 2, 2006" }}</time></p>
+      {{ $rt := .ReadingTime }}
+      <p>Estimated Reading Time: {{ $rt }} minute{{if gt $rt 1}}s{{end}}</p>
+    </header>
+    <main>
+      <article class="post__article">
+        {{ .Content }}
+        <div class="post__actions">
+          <div>
+            <div class="tags tags--page">
+              {{ with .Params.tags }}
+                {{ if ge (len .) 1 }}
+                  {{ range . }}
+                    <a class="no-uline" href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>
+                  {{ end }}
+                {{ end }}
+              {{ end}}
+            </div>
+          </div>
+          <div class="u-txtright">
+            <div class="post__sharelinks">
+              <a href="https://facebook.com/sharer/sharer.php?u={{.Permalink}}" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Share on Facebook</a>
+              <a href="https://twitter.com/intent/tweet/?text={{.Title }}&url={{.Permalink}}&via=josephrexme" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" data-show-count="false">Share on Twitter</a>
+            </div>
+          </div>
+        </div>
+        <!-- Comments Section -->
+        <div class="comments">
+          <p id="toggleComments" class="comments__trigger" data-comments="show">show comments</p>
+          <div class="comments__content">
+            <div id="disqus_thread" class="comments__thread"></div>
+          </div>
+        </div>
+        <!-- end comments -->
+      </article>
+    </main>
+  </div>
+
+  <footer class="post__footer wrap">
+    <div>
+      {{ if .Prev }}
+        <h5>Newer Post</h5>
+        <a href="{{.Prev.Permalink}}">{{.Prev.Title}}</a>
+      {{ end }}
+    </div>
+    <div class="u-txtright">
+      {{ if .Next }}
+        <h5>Older Post</h5>
+        <a href="{{.Next.Permalink}}">{{.Next.Title}}</a>
+      {{ end }}
+    </div>
+  </footer>
+
+</div>
+{{ partial "js.html" . }}
+
+{{ end }}

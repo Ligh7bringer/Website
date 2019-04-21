@@ -1,0 +1,42 @@
+// Mixins
+
+// Makes Ellipsis on Single Line
+@mixin ellipsis-line($width){
+  width: $width;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+// Gradients
+@mixin gradient-dark-linear{
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
+  background-image: -o-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
+  background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
+}
+@mixin gradient-light-linear{
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+}
+@mixin gradient-dark-radial{
+  background-image: radial-gradient(center 0, circle farthest-corner, rgba(0,0,0,0.15), rgba(0,0,0,0));
+}
+@mixin gradient-light-radial{
+  background-image: radial-gradient(center 0, circle farthest-corner, rgba(255,255,255,0.4), rgba(255,255,255,0));
+}
+// Responsive Breakpoints
+@mixin breakpoint($value){
+  @media only screen and (min-width: $value){
+    @content;
+  }
+}
+// Tinted Hero Images
+@mixin tinted-bg($overlay-color, $alpha-level, $image, $size: normal){
+  @if function-exists(image-url){
+    background: linear-gradient(rgba($overlay-color, $alpha-level), rgba($overlay-color, $alpha-level)), image-url($image);
+  } @else {
+    background: linear-gradient(rgba($overlay-color, $alpha-level), rgba($overlay-color, $alpha-level)), url($image);
+  }
+  background-size: $size;
+}
+

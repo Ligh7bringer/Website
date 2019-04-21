@@ -1,0 +1,145 @@
+/*--------------------------------*\
+  Global Rules/Namespace
+\*--------------------------------*/
+*{
+  box-sizing: border-box;
+  &:focus{
+    outline-color: #555;
+    outline-width: thin;
+  }
+}
+::selection{
+  background: #f0f0f0;
+}
+html{
+  font-size: 62.5%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body{
+  padding: 5rem 3rem;
+  @include breakpoint(471px){
+    padding: 6rem;
+  }
+  font-family: $font--primary;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background: $background-primary;
+  color: $color-primary-text;
+  &.dark-theme{
+    background: $background-secondary;
+    color: $color-secondary-text;
+  }
+}
+blockquote{
+  position: relative;
+  margin: 0 1rem;
+  padding: 1rem 4rem;
+  background: darken(#fff, 1%);
+  border-left: solid thick #444;
+  font-weight: 300;
+  &::before{
+    content: '“';
+    position: absolute;
+    top: -2rem;
+    left: 1rem;
+    font-size: 8rem;
+    color: #333;
+  }
+  .dark-theme &{
+    background: lighten(#000, 15%);
+    &::before{
+      color: #ddd;
+    }
+  }
+}
+cite{
+  display: block;
+  &::before{
+    content: '— ';
+  }
+}
+a{
+  color: rgba(black, .7);
+  .dark-theme &{
+    color: rgba(white, .7);
+  }
+  text-decoration: none;
+  &:not(.no-uline){
+    background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
+    background-size: 0 .3rem;
+    background-position: 0 1em;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out .1s;
+    &:hover, &:focus{
+      background-size: 100% .3rem;
+    }
+  }
+}
+input{
+  font-family: inherit;
+}
+
+dfn, abbr{
+  border-bottom: dashed thin #222;
+  text-decoration: none;
+  .dark-theme &{
+    border-color: #ccc;
+  }
+}
+b, strong{
+  font-weight: 600;
+}
+em{
+  font-style: italic;
+  font-weight: 300;
+}
+
+code {
+  padding: 1px 5px;
+  border-radius: $inputs-border-radius;
+  background-color: rgba(#000, .3);
+}
+
+pre {
+  padding: 0 12px;
+  overflow: auto;
+  font-size: 1.6rem;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  &:not(.line-pre){
+    padding: 0 1.2rem;
+    background: #151515;
+    border-radius: $inputs-border-radius;
+    line-height: 30px;
+    font-size: .8em;
+    color: #ddd;
+  }
+}
+.wrap{
+  width: 100%;
+  max-width: $site-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.icon{
+  fill: currentColor;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+}
+.logo{
+  width: 5rem;
+  height: 5rem;
+  fill: #000;
+  .dark-theme &{
+    fill: #fff;
+  }
+}

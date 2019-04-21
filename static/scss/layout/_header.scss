@@ -1,0 +1,50 @@
+.header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  > div{
+    flex: 0 1 auto;
+  }
+  &__navigation{
+    font-size: 1.8rem;
+    a{
+      display: inline-block;
+      &::before, &::after{
+        display: inline-block;
+        opacity: 0;
+        transition: transform .3s, opacity .2s;
+      }
+      &::before{
+        content: '[';
+        margin-right: 1rem;
+        transform: translate(2rem);
+      }
+      &::after{
+        content: ']';
+        margin-left: 1rem;
+        transform: translate(-2rem);
+      }
+      &:hover, &:focus{
+        &::before, &::after{
+          opacity: 1;
+          transform: translate(0);
+        }
+      }
+    }
+  }
+  &__themes{
+    position: absolute;
+    top: -3rem;
+    right: -1rem;
+    opacity: 1 !important;
+    cursor: pointer;
+    fill: #000;
+    .dark-theme &{
+      fill: #fff;
+    }
+    @include breakpoint(470px) {
+      top: -4rem;
+      right: -4rem;
+    }
+  }
+}
