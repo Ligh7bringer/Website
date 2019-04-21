@@ -6,6 +6,7 @@
     </nav>
     <div class="portfolio__showcase">
       {{ range where .Paginator.Pages "Section" "post" }}
+      
       <div class="portfolio__item">
         <h4><a href="{{ .URL }}">{{ .LinkTitle }}</a></h4>
         <i>{{ .PublishDate.Format "January 2, 2006" }}</i> <br> <br>

@@ -1,0 +1,24 @@
+<div class="portfolio__works">
+
+    <nav class="portfolio__nav">
+      <h3>Projects</h3>
+      <i>Some of my favourite projects.</i>
+    </nav>
+
+    <div class="portfolio__showcase">
+
+        {{ range $.Site.Data.projects.data.repositoryOwner.pinnedItems.edges }}
+
+        <div class="portfolio__item">
+          <h5><a href="{{ .node.url }}"> {{ .node.name }} </a></h5>
+          <p> {{ .node.description }}</p>
+          {{ range .node.languages.nodes}}
+            <span class="prog-lang"> {{ .name }} </span>
+          {{ end }}
+        </div>
+
+        {{ end }}
+
+    </div>
+
+</div>

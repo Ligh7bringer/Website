@@ -9,6 +9,13 @@ a:hover:not(.no-col) {
 	color: var(--accent);
 }
 
+.prog-lang {
+    background: var(--accent);
+    color: white;
+    display: inline-block;
+    padding: 0.5vh;
+}
+
 #top, #bottom {
 	background: var(--accent);
 	position: fixed;
