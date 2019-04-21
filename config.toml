@@ -1,0 +1,75 @@
+baseurl = "https://sgeorgiev.netlify.com/"
+themesDir = "./themes/"
+languageCode = "en"
+metaDataFormat = "toml"
+title = "Svetlozar Georgiev's portfolio and blog"
+theme = "connoisseur"
+disqusShortname = "Ligh7bringer"
+disablePathToLower = true
+pygmentsstyle = "native"
+RSSLink = "feed.xml"
+paginate = 4.0
+
+[outputs]
+home = [
+    "HTML",
+    "RSS"
+]
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
+[params]
+# home page 
+name = "Svetlozar Georgiev"
+subtitle = "an undergraduate software engineer."
+about_me = "I like computer graphics, open source, ..."
+description = "Svetlozar Georgiev's projects, blog posts and other stuff."
+showBorder = true
+accent = "#2FDAB8"
+css = ["css/custom.css"]
+font = "Ubuntu"
+# metadata
+bio = "interests..."
+email = "s.georgiev255\\*\\*at\\*\\*gmail"
+profile = "not.yet"
+enableRSS = true
+themeBuilder = true
+favicon = "favicon.png"
+logo = "logo.png"
+banner = "/static/favicon-32x32.png"
+themeColor = "b30950"
+
+[[menu.main]]
+    url = "/about"
+    name = "About"
+    weight = 1
+
+[[menu.main]]
+    url = "/resume"
+    name = "Résumé"
+    weight = 2
+
+[[menu.main]]
+    url = "/projects"
+    name = "Projects"
+    weight = 3
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 4
+
+[[menu.main]]
+    url = "/contact"
+    name = "Contact"
+    weight = 5
+
+
+[social]
+twitter = "https://twitter.com/TO_ADD"
+github = "https://github.com/Ligh7bringer"
+linkedin = "https://www.linkedin.com/in/TO_ADD"
+email = "s.georgiev255@gmail.com"

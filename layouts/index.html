@@ -3,15 +3,15 @@
 <div class="portfolio">
 
   <div class="portfolio__intro">
-    <h1>I am Svetlozar Georgiev, <br>an undergraduate software engineer.</h1>
-    <h5 class="light-type">I like....</h5>
+    <h1>I am {{ .Site.Params.name }}, <br>{{ .Site.Params.subtitle }}</h1>
+    <h5 class="light-type"> {{ .Site.Params.about_me }} </h5>
   </div>
 
   <div>
-    <a href="{{ .Site.Social.twitter }}" rel="noopener" class="no-uline"> <i class="fab fa-twitter fa-fw fa-2x"></i> </a>
-    <a href="{{ .Site.Social.github }}" rel="noopener" class="no-uline"> <i class="fab fa-github fa-fw fa-2x"></i> </a>
-    <a href="{{ .Site.Social.linkedin }}" rel="noopener" class="no-uline"> <i class="fab fa-linkedin fa-fw fa-2x"></i> </a>
-    <a href="mailto:{{ .Site.Social.email }}" rel="noopener" class="no-uline"> <i class="fas fa-envelope-open fa-fw fa-2x"></i> </a>
+    <a href="mailto:{{ .Site.Social.email }}" rel="noopener" class="no-uline no-col"> <i class="fas fa-envelope fa-fw fa-2x"></i> </a>
+    <a href="{{ .Site.Social.twitter }}" rel="noopener" class="no-uline no-col"> <i class="fab fa-twitter fa-fw fa-2x"></i> </a>
+    <a href="{{ .Site.Social.github }}" rel="noopener" class="no-uline no-col"> <i class="fab fa-github fa-fw fa-2x"></i> </a>
+    <a href="{{ .Site.Social.linkedin }}" rel="noopener" class="no-uline no-col"> <i class="fab fa-linkedin fa-fw fa-2x"></i> </a>
   </div>
 
 </div>

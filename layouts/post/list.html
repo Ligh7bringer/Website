@@ -1,14 +1,35 @@
 {{ define "main" }}
-  <main class="list list--gapped">
-    {{ range where .Paginator.Pages "Section" "ne" "" }}
-    <div class="list__item">
-      <div class="list__item__content">
-        <h3><a href='{{ .URL }}'>{{ .LinkTitle }}</a></h3>
+<div class="portfolio__works">
+    <nav class="portfolio__nav">
+      <h3>Posts</h3>
+      <i>My (random) thoughts.</i>
+    </nav>
+    <div class="portfolio__showcase">
+      {{ range where .Paginator.Pages "Section" "post" }}
+      <div class="portfolio__item">
+        <h4><a href="{{ .URL }}">{{ .LinkTitle }}</a></h4>
+        <i>{{ .PublishDate.Format "January 2, 2006" }}</i> <br> <br>
+        {{ slicestr .Summary 0 300 }}...
+        <p>
+        <small><a href="{{ .URL }}">Read more ››</a></small>
+        </p>
       </div>
-      <footer class="list__footer clearfix">
-        <a href="{{ .URL }}" class="u-fr ellipsized">Read More</a>
-      </footer>
+      {{ end }}
+      
+      <div class="portfolio__links u-txtright">
+        <div class="paginate" aria-label="pagination">
+          {{ if .Paginator.HasPrev }}
+            <a href="{{.Paginator.Prev.URL}}" class="paginate__previous">&lsaquo;</a>
+          {{ else }}
+            <span class="paginate__previous" aria-disabled="true">&lsaquo;</span>
+          {{ end }}
+          {{ if .Paginator.HasNext }}
+            <a href="{{.Paginator.Next.URL}}" class="paginate__next">&rsaquo;</a>
+          {{ else }}
+            <span class="paginate__next" aria-disabled="true">&rsaquo;</span>
+          {{ end }}
+        </div>
+      </div>
     </div>
-    {{ end }}
-  </main>
+  </div>
 {{ end }}

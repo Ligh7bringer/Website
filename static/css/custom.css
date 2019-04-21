@@ -1,0 +1,22 @@
+a:not(.no-col), a:visited:not(.no-col) {
+	background-color: transparent;
+	color: var(--accent);
+}
+
+a:active:not(.no-col),
+a:hover:not(.no-col) {
+	outline: 0;
+	color: var(--accent);
+}
+
+#top, #bottom {
+	background: var(--accent);
+	position: fixed;
+	}
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: var(--border-width);
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }

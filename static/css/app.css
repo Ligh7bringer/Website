@@ -233,13 +233,14 @@ template {
 	display: none
 }
 
-a {
-	background-color: transparent
+a,
+a:visited {
+	background-color: transparent;
 }
 
-a:active,
+a,
 a:hover {
-	outline: 0
+	outline: 0;
 }
 
 b,
