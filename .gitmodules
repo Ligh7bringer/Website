@@ -1,0 +1,4 @@
+[submodule "themes/connoisseur"]
+	path = themes/connoisseur
+	url = https://github.com/josephrexme/connoisseur.git
+	branch = master
