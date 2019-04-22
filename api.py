@@ -53,6 +53,19 @@ query_langs = """
 }
 """
 
+query_repo_count = """
+{
+  user(login: "Ligh7bringer") {
+    id
+    name
+    url
+    repositories(first: 100) {
+      totalCount
+    }
+  }
+}
+"""
+
 
 def count_langs(data):
   result = {}
@@ -94,3 +107,8 @@ if __name__ == "__main__":
     
   with open('data/languages.json', 'w') as outfile:  
       json.dump(final, outfile, indent=4, separators=(',', ': '))
+
+  # get the total count of my repositories
+  result_repo_count = run_query(query_repo_count)
+  with open('data/repoCount.json', 'w') as outfile:  
+    json.dump(result_repo_count['data']['user']['repositories'], outfile, indent=4, separators=(',', ': '))

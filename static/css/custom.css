@@ -15,7 +15,7 @@ a:hover:not(.no-col) {
 }
 
 .prog-lang {
-    background: var(--accent);
+	background: var(--accent);
     color: white;
     display: inline-block;
 	padding: 0.5vh;
@@ -23,11 +23,13 @@ a:hover:not(.no-col) {
 }
 
 .prog-lang-nav {
-    background: var(--accent);
-    color: white;
-	padding: 0.5vh;
-	margin-top: 2%;
-	width: 50%;
+	width: 100%;
+}
+
+.pull-right {
+	position: absolute;
+    right: 0;
+    margin-right: 20px;
 }
 
 #top, #bottom {
@@ -40,4 +42,27 @@ a:hover:not(.no-col) {
 }
 #top { top: 0; }
 #bottom { bottom: 0; }
-	
+
+.progress-item {    
+    width: 100%;
+    background: darkgray;
+    position: relative;
+}
+
+.completion {
+	background-color: var(--accent);
+	margin-top: 3%;	
+	color: white;
+	padding: 1.5%;
+}
+
+.completion .subject {
+    text-align: left;
+}
+
+.completion .percent {
+    position: absolute;
+	right: 2%;
+	bottom: 10%;
+	/* margin-right: 2%; */
+}
