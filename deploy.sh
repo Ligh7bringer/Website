@@ -2,7 +2,7 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# activate virtualenv (this is an alias)
+# activate virtualenv
 source .venv/bin/activate
 # get up-to-date data from github
 python api.py
