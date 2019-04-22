@@ -4,7 +4,7 @@
     {{ with .Site.Params.copyright }}
       {{ . | markdownify }}
     {{ else }}
-    © {{ now.Format "2006" }} {{ .Site.Params.name }}. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/josephrexme/connoisseur">Connoisseur</a>.
+    © {{ now.Format "2006" }} {{ .Site.Params.name }}. Powered by <a class="no-col" href="https://gohugo.io">Hugo</a> and <a class="no-col" href="https://github.com/josephrexme/connoisseur">Connoisseur</a>.
     {{ end }}
     </p>
   </div>

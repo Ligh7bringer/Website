@@ -114,12 +114,12 @@
   }
   </script>
 
-    <!-- custom css -->
-    {{ range .Site.Params.css -}}
-      <link rel="stylesheet" href="{{ . | absURL }}">
-    {{- end }}
+  <!-- custom css -->
+  {{ range .Site.Params.css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+  {{- end }}
 
-    <!-- google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ .Site.Params.font }}:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">  
+  <!-- google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ .Site.Params.font }}:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">  
 </head>

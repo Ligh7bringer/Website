@@ -9,21 +9,35 @@ a:hover:not(.no-col) {
 	color: var(--accent);
 }
 
+.most-used-langs {
+	margin-top: 10%;
+	width: 70%;
+}
+
 .prog-lang {
     background: var(--accent);
     color: white;
     display: inline-block;
-    padding: 0.5vh;
+	padding: 0.5vh;
+	margin-top: 2%;
+}
+
+.prog-lang-nav {
+    background: var(--accent);
+    color: white;
+	padding: 0.5vh;
+	margin-top: 2%;
+	width: 50%;
 }
 
 #top, #bottom {
 	background: var(--accent);
 	position: fixed;
-	}
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: var(--border-width);
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
+}		
+#top, #bottom {
+	left: 0; right: 0;
+	height: var(--border-width);
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
+	

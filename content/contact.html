@@ -1,0 +1,28 @@
+---
+title: Contact
+type: about
+---
+
+<form name="contact" netlify-honeypot="bot-field" method="POST" netlify>
+    <p hidden>
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+    </p>
+    <p>
+    <label>What is your name?
+        <input name="full-name" type="text" placeholder="Your full name" required>
+    </label>
+    </p>
+    <p>
+    <label>What is your email address?
+        <input name="email-address" type="email" placeholder="Your email" required>
+    </label>
+</p>
+<p>
+    <label>What your message?
+        <textarea name="message" type="text" placeholder="Your message..." required></textarea>
+    </label>
+</p>
+<p>
+        <button type="submit" value="Submit" id="Form-submit">Submit</button>
+    </p>
+</form>
