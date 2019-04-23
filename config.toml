@@ -1,4 +1,4 @@
-baseurl = "http://www.sgeor.info/"
+baseurl = "https://www.sgeor.info/"
 themesDir = "./themes/"
 languageCode = "en"
 metaDataFormat = "toml"
