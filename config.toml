@@ -1,4 +1,4 @@
-baseurl = "https://sgeorgiev.netlify.com/"
+baseurl = "http://www.sgeor.info/"
 themesDir = "./themes/"
 languageCode = "en"
 metaDataFormat = "toml"
@@ -29,7 +29,7 @@ about_me = "I like computer graphics, open source, ..."
 description = "Svetlozar Georgiev's projects, blog posts and other stuff."
 showBorder = true
 accent = "#2FDAB8"
-css = ["css/custom.css"]
+css = ["css/custom.css", "css/scroll.css"]
 font = "Ubuntu"
 # metadata
 bio = "interests..."

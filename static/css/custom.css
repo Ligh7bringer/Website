@@ -1,3 +1,7 @@
+body {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 a:not(.no-col), a:visited:not(.no-col) {
 	background-color: transparent;
 	color: var(--accent);

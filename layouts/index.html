@@ -3,8 +3,26 @@
 <div class="portfolio">
 
   <div class="portfolio__intro">
+
     <h1>I am {{ .Site.Params.name }}, <br>{{ .Site.Params.subtitle }}</h1>
-    <h5 class="light-type"> {{ .Site.Params.about_me }} </h5>
+    <section class="wrapper">  
+        <h2 class="sentence">I like
+          <div class="slidingVertical">
+            <span style="color: red;">pizza.</span>
+            <span style="color: green;">pasta.</span>
+            <span style="color: blue;">tomatoes.</span>
+            <span style="color: teal;">sushi.</span>
+            <span style="color: purple;">and other stuff.</span>
+          </div>
+        </h2>
+      </section>
+
+      <div class="portfolio__links">
+          <h6> <a rel="noopener" class="no-uline no-col" href="#">My projects.</a> </h6>
+          <h6> <a rel="noopener" class="no-uline no-col" href="#">My resume.</a> </h6>
+        
+      </div>
+
   </div>
 
   <div>
