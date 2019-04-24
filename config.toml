@@ -4,6 +4,7 @@ languageCode = "en"
 metaDataFormat = "toml"
 title = "Svetlozar Georgiev's portfolio and blog"
 theme = "connoisseur"
+googleAnalytics = "UA-138983803-1"
 disqusShortname = "Ligh7bringer"
 disablePathToLower = true
 pygmentsstyle = "native"
