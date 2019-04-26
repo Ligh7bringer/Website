@@ -1,7 +1,3 @@
-body {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 a:not(.no-col), a:visited:not(.no-col) {
 	background-color: transparent;
 	color: var(--accent);
@@ -135,4 +131,3 @@ label, .custom-field, .custom-textarea {
 label {
     margin-bottom: 20px;
 }
-  

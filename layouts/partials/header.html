@@ -10,7 +10,7 @@
     <div class="header__right">
       <nav class="header__navigation">
           {{ range sort .Site.Menus.main }}
-            <a  class="no-uline no-col" href="{{ .URL }}">{{ .Name }}</a>
+            <a class="no-uline no-col" href="{{ .URL }}">{{ .Name }}</a>
           {{ end }}
           <a class="no-uline no-col" id="themeToggle"><i class="fas fa-lightbulb"></i></a>
       </nav>
