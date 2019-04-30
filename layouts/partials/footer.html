@@ -12,6 +12,10 @@
 
 <noscript id="deferred-styles">
   <link rel="stylesheet" href="{{ "css/app.css" | absURL }}">
+  <!-- custom css -->
+  {{ range .Site.Params.css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+  {{- end }}
 </noscript>
 <script>
 var loadDeferredStyles = function() {

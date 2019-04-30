@@ -1,3 +1,7 @@
+body {
+	font-family: var(--main-font), sans-serif;
+}
+
 a:not(.no-col), a:visited:not(.no-col) {
 	background-color: transparent;
 	color: var(--accent);
