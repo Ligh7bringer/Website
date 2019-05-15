@@ -30,7 +30,7 @@ about_me = "I like computer graphics, open source, ..."
 description = "Svetlozar Georgiev's projects, blog posts and other stuff."
 showBorder = true
 accent = "#008081"
-css = ["css/custom.css", "css/scroll.css"]
+css = ["css/scroll.css", "css/custom.css"]
 font = "Ubuntu"
 # metadata
 bio = "interests..."

@@ -135,3 +135,7 @@ label, .custom-field, .custom-textarea {
 label {
     margin-bottom: 20px;
 }
+
+.centered {
+	margin: auto;
+}

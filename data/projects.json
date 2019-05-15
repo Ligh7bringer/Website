@@ -6,7 +6,7 @@
                     {
                         "node": {
                             "__typename": "Repository",
-                            "description": "My Honours project.",
+                            "description": "My Honours project: a chatbot which can answer programming questions to help students.",
                             "languages": {
                                 "nodes": [
                                     {
