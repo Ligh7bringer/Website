@@ -92,6 +92,7 @@ a:hover:not(.no-col) {
 	-moz-border-radius: none;
 	-webkit-border-radius: none;
 	border-radius: none;
+	color: black;
 }
 
 .field-custom:focus, .textarea-custom:focus {
@@ -117,10 +118,11 @@ a:hover:not(.no-col) {
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+	background: darkgray;
 }
 
 .btn-custom:active {
-	background: black;
+	background: darkgray;
   }
   @media (max-width: 30em) {
 	form input[type=submit] {
@@ -136,6 +138,7 @@ label {
     margin-bottom: 20px;
 }
 
-.centered {
-	margin: auto;
+.centered-text {
+	text-align: center;
 }
+

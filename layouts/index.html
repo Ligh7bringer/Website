@@ -1,29 +1,29 @@
 {{ define "main" }}
+<div class="centered-text">
 
 <div class="portfolio">
 
   <div class="portfolio__intro">
 
-    <div class="centered">
-      <h1>I am {{ .Site.Params.name }}, <br>{{ .Site.Params.subtitle }}</h1>
-      <section class="wrapper">  
-          <h2 class="sentence">I like
-            <div class="slidingVertical">
-              <span style="color: red;">pizza.</span>
-              <span style="color: green;">pasta.</span>
-              <span style="color: blue;">tomatoes.</span>
-              <span style="color: teal;">sushi.</span>
-              <span style="color: purple;">and other stuff.</span>
-            </div>
-          </h2>
-        </section>
+    <h1>I am {{ .Site.Params.name }}, <br>{{ .Site.Params.subtitle }}</h1>
+    <!-- <section class="wrapper">  
+        <h4 class="sentence">I like
+          <div class="slidingVertical">
+            <span style="color: red;">AI</span>
+            <span style="color: green;">game development</span>
+            <span style="color: blue;">coffee</span>
+            <span style="color: teal;">Linux</span>
+            <span style="color: purple;">web development</span>
+          </div>
+        </h4>
+      </section> -->
 
-        <div class="portfolio__links">
-            <h6> <a rel="noopener" class="no-uline no-col" href="#">My projects.</a> </h6>
-            <h6> <a rel="noopener" class="no-uline no-col" href="#">My resume.</a> </h6>        
-        </div>
-    </div>
-    
+      <div class="portfolio__links">
+          <h6> <a rel="noopener" class="no-uline no-col" href="/about/">Read more about me</a> </h6>
+          <h6> <a rel="noopener" class="no-uline no-col" href="/resume/">Also have a look at my résumé</a> </h6>        
+          <h6> <a rel="noopener" class="no-uline no-col" href="/projects/">Or check my projects</a> </h6>          
+      </div>
+
   </div>
 
   <div>
@@ -32,6 +32,8 @@
     <a href="{{ .Site.Social.github }}" rel="noopener" class="no-uline no-col"> <i class="fab fa-github fa-fw fa-2x"></i> </a>
     <a href="{{ .Site.Social.linkedin }}" rel="noopener" class="no-uline no-col"> <i class="fab fa-linkedin fa-fw fa-2x"></i> </a>
   </div>
+
+</div>
 
 </div>
 

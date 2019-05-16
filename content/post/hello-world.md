@@ -1,15 +1,16 @@
 ---
 author: Svetlozar Georgiev
-title: Hello World
-date: 2019-04-21T20:07:43+01:00
+title: Hello, World!
+date: 2019-05-15T21:27:45+01:00
 url:
 draft: false
 tags:
   - uncategorized
+description: Test
 ---
 
-This is a test post.
+Hello, world! This is my first blog post on my newly set up website. I doubt that I will post *too* often, but you never know. I think I the posts will be mainly about things that I have figured out and it will be a way of backing up the solution so I don't forget how I've done something.
 
-Ut nec pulvinar mauris. Vivamus quis convallis justo, vitae viverra diam. Duis interdum, quam eget ullamcorper gravida, turpis dolor venenatis orci, et dignissim velit augue non massa. Aliquam erat volutpat. Vivamus ipsum nibh, rhoncus ut elementum at, placerat et elit. Pellentesque egestas eget augue vitae ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in iaculis nibh. Donec sit amet aliquam magna, in convallis sapien. Donec non lacus vel tellus tempor elementum. Nullam vitae sapien ac nisi tincidunt feugiat. Aliquam efficitur, orci at iaculis vestibulum, tellus turpis commodo lacus, non pretium lorem felis in lacus. Donec vitae tortor felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+I am planning to update this website in the future, however I might switch to another theme. The one I am currently using is great as it was exactly what I was looking for: minimalistic, fast, good-looking. Initially, it was a single-page theme (they seem to be popular at the moment), but I didn't like that so I modified it and split the content into separate pages. There were a few other small things I didn't like too and while I was at it, I made a lot of modifications and ended spending probably about a week customising the theme. I am still unhappy with some small details, but I could probably edit it forever if I didn't stop at some point. 
 
-Donec iaculis sem vel velit faucibus fringilla. Aenean rutrum eros eget est accumsan, ac bibendum justo finibus. Nulla sapien justo, interdum eget ipsum in, elementum euismod nibh. Phasellus ornare luctus enim eu lobortis. Morbi rhoncus risus in lacus auctor dictum. Maecenas maximus lobortis purus nec sollicitudin. Vestibulum volutpat vel mi nec gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam rhoncus ipsum risus, id tincidunt velit finibus nec. Sed euismod, mauris at suscipit maximus, dui mauris dictum libero, vitae varius ipsum quam at eros. Duis tortor mauris, sollicitudin vel aliquet a, imperdiet sit amet lectus. Phasellus egestas pellentesque nisl, venenatis fringilla metus eleifend sed.
+Unfortunately, I don't think this theme is being actively updated and it is missing some features that most themes provide but I managed to implement them myself. I also added a completely custom-made projects page which pulls data directly from GitHub and shows my most-used programming languages and my "best" projects (my pinned repositories on GitHub) including their descriptions and the languages used to create them. The data is not dynamically updated since Hugo allows the creation of *static* websites. Instead, it is updated every time I deploy an update to the website. This is a limitation and I might switch to another method in the future. 

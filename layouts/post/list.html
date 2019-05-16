@@ -10,7 +10,11 @@
       <div class="portfolio__item">
         <h4><a href="{{ .URL }}">{{ .LinkTitle }}</a></h4>
         <i>{{ .PublishDate.Format "January 2, 2006" }}</i> <br> <br>
-        {{ slicestr .Summary 0 300 }}...
+        {{ if gt (len .Summary) 300 }}
+          {{ slicestr .Summary 0 300 }}...
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
         <p>
         <small><a href="{{ .URL }}">Read more ››</a></small>
         </p>

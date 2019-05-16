@@ -2,12 +2,12 @@
 /*Sentence*/
 .sentence{
      /* font-size: 30px; */
-     text-align: left;
+     text-align: center;
 }
 /*Wrapper*/
 .wrapper{
-    margin: auto auto;
-    position: relative;
+    /* margin: auto auto;
+    position: relative; */
 }
 
 /*Vertical Sliding*/
