@@ -17,7 +17,7 @@
     },
     {
         "name": "CSS",
-        "used": 4
+        "used": 5
     },
     {
         "name": "C++",
@@ -37,7 +37,7 @@
     },
     {
         "name": "Makefile",
-        "used": 6
+        "used": 7
     },
     {
         "name": "Haskell",
@@ -61,7 +61,7 @@
     },
     {
         "name": "TeX",
-        "used": 6
+        "used": 7
     },
     {
         "name": "Python",
@@ -73,7 +73,7 @@
     },
     {
         "name": "HTML",
-        "used": 2
+        "used": 3
     },
     {
         "name": "Ada",

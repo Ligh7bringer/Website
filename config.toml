@@ -25,7 +25,7 @@ baseName = "feed"
 [params]
 # home page 
 name = "Svetlozar Georgiev"
-subtitle = "an undergraduate software engineer."
+subtitle = "a graduate software engineer."
 about_me = "I like computer graphics, open source, ..."
 description = "Svetlozar Georgiev's projects, blog posts and other stuff."
 showBorder = true
@@ -70,7 +70,6 @@ themeColor = "b30950"
 
 
 [social]
-twitter = "https://twitter.com/TO_ADD"
 github = "https://github.com/Ligh7bringer"
-linkedin = "https://www.linkedin.com/in/TO_ADD"
+linkedin = "https://www.linkedin.com/in/sgeor255"
 email = "s.georgiev255@gmail.com"
