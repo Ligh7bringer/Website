@@ -25,7 +25,7 @@ baseName = "feed"
 [params]
 # home page 
 name = "Svetlozar Georgiev"
-subtitle = "a graduate software engineer."
+subtitle = "Graduate Software Engineer"
 about_me = "I like computer graphics, open source, ..."
 description = "Svetlozar Georgiev's projects, blog posts and other stuff."
 showBorder = true
