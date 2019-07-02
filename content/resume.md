@@ -9,7 +9,7 @@ type: about
 
 ## Contact Information
 
-- {{% fa-icon fas fa-envelope %}} s.georgiev255@gmail.com
+- {{% fa-icon fas fa-envelope %}} [s.georgiev255@gmail.com](mailto:s.georgiev255@gmail.com)
 - {{% fa-icon fas fa-globe-europe %}} http://www.sgeor.info
 - {{% fa-icon fab fa-linkedin %}} https://www.linkedin.com/in/sgeor255
 - {{% fa-icon fab fa-github %}} https://github.com/Ligh7bringer
