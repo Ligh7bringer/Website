@@ -46,7 +46,7 @@ collected from Stack Overflow. The project was implemented as a website
 optimised for desktop PCs and mobile devices through a **responsive
 design**. **Python** was used both for the front-end (Flask) and the
 back-end (Chatterbot).
-
+ 
 **English Language School Plovdiv**, Plovdiv, Bulgaria 	*09/2010 - 07/2015*
 
 *Secondary education*

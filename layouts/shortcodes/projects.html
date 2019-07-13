@@ -17,8 +17,10 @@
           </div>
           {{ end }}
 
-          <div class="portfolio__links u-txtright">
-            <a href="https://github.com/Ligh7bringer/repositories" rel="noopener"> All my projects on GitHub </a>
+          <br>
+
+          <div>
+            <a href="https://github.com/Ligh7bringer/repositories" rel="noopener"> See all my projects on GitHub </a>
           </div>
 
         </div>
@@ -28,17 +30,17 @@
 
     <div class="portfolio__showcase">
 
-        {{ range $.Site.Data.projects.data.repositoryOwner.pinnedItems.edges }}
+      {{ range $.Site.Data.projects.data.repositoryOwner.pinnedItems.edges }}
 
-        <div class="portfolio__item">
-          <h5><a href="{{ .node.url }}"> {{ .node.name }} </a></h5>
-          <p> {{ .node.description }}</p>
-          {{ range .node.languages.nodes}}
-            <span class="prog-lang"> <i> {{ .name }} </i> </span>
-          {{ end }}
-        </div>
-
+      <div class="portfolio__item">
+        <h5><a href="{{ .node.url }}"> {{ .node.name }} </a></h5>
+        <p> {{ .node.description }}</p>
+        {{ range .node.languages.nodes}}
+          <span class="prog-lang"> <i> {{ .name }} </i> </span>
         {{ end }}
+      </div>
+
+      {{ end }}
 
     </div>
 
