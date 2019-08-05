@@ -9,7 +9,7 @@
     },
     {
         "name": "C",
-        "used": 6
+        "used": 8
     },
     {
         "name": "Shell",
@@ -17,15 +17,15 @@
     },
     {
         "name": "CSS",
-        "used": 5
+        "used": 6
     },
     {
         "name": "C++",
-        "used": 9
+        "used": 12
     },
     {
         "name": "Objective-C",
-        "used": 1
+        "used": 2
     },
     {
         "name": "PHP",
@@ -33,7 +33,7 @@
     },
     {
         "name": "JavaScript",
-        "used": 3
+        "used": 4
     },
     {
         "name": "Makefile",
@@ -45,11 +45,11 @@
     },
     {
         "name": "C#",
-        "used": 4
+        "used": 5
     },
     {
         "name": "CMake",
-        "used": 6
+        "used": 9
     },
     {
         "name": "Batchfile",
@@ -57,7 +57,7 @@
     },
     {
         "name": "GLSL",
-        "used": 2
+        "used": 3
     },
     {
         "name": "TeX",
@@ -73,10 +73,18 @@
     },
     {
         "name": "HTML",
-        "used": 3
+        "used": 4
     },
     {
         "name": "Ada",
+        "used": 1
+    },
+    {
+        "name": "Lua",
+        "used": 2
+    },
+    {
+        "name": "ASP",
         "used": 1
     }
 ]
