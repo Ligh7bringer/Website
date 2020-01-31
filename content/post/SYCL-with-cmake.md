@@ -3,10 +3,11 @@ author: Svetlozar Georgiev
 title: Building SYCL applications with CMake
 date: 2020-01-31T21:05:17Z
 url:
-draft: true
+draft: false
 tags:
   - sycl
   - cmake
+description: A quick (and dirty) tutorial on building SYCL applications with CMake 
 ---
 
 When I started working at [Codeplay](https://www.codeplay.com/) one of the first things I was recommended to do was to learn SYCL. I quickly found out that there aren't that many resources online. I eventually found an example of the usual GPU "hello, world" program - vector addition. However, I realised I had no idea how to compile it! Well, here's a quick tutorial on compiling SYCL applications with CMake so you're not as confused as I was. I chose CMake since it's probably the fastest way to get something working. 
