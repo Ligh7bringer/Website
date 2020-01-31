@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: sgeor.info
-Token: fa70765d349f6060a67ebea07c959b9e9a3a5e04ac63a53bd14a819c883417c5

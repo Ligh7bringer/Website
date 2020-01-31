@@ -1,14 +1,14 @@
 {{ define "main" }}
 <div class="centered-text">
 
-<div class="portfolio">
+  <div class="portfolio">
 
-  <div class="portfolio__intro">
+    <div class="portfolio__intro">
 
-    <h1>{{ .Site.Params.name }}</h1>
-    <h4>{{ .Site.Params.subtitle }}</h4>
-    Artificial Intelligence, Game Development, Computer Graphics, Web Development, Linux, Git
-    <!-- <section class="wrapper">  
+      <h1>{{ .Site.Params.name }}</h1>
+      <h4>{{ .Site.Params.subtitle }}</h4>
+      Machine Learning, Game Development, Computer Graphics, Web Development, Linux
+      <!-- <section class="wrapper">  
         <h4 class="sentence">
           <div class="slidingVertical">
             <span style="color: red;">AI</span>
@@ -21,20 +21,22 @@
       </section> -->
 
       <div class="portfolio__links">
-          <!-- <h6> <a rel="noopener" class="no-uline no-col" href="/about/">Read more about me</a> </h6> -->
-          <h6> <a rel="noopener" class="no-uline no-col" href="/resume/">My résumé</a> </h6>        
-          <h6> <a rel="noopener" class="no-uline no-col" href="/projects/">My projects</a> </h6>          
+        <!-- <h6> <a rel="noopener" class="no-uline no-col" href="/about/">Read more about me</a> </h6> -->
+        <h6> <a rel="noopener" class="no-uline no-col" href="/resume/">My résumé</a> </h6>
+        <h6> <a rel="noopener" class="no-uline no-col" href="/projects/">My projects</a> </h6>
       </div>
 
-  </div>
+    </div>
 
-  <div>
-    <a href="mailto:{{ .Site.Social.email }}" rel="noopener" class="no-uline no-col"> <i class="fas fa-envelope fa-fw fa-2x"></i> </a>
-    <a href="{{ .Site.Social.github }}" rel="noopener" class="no-uline no-col"> <i class="fab fa-github fa-fw fa-2x"></i> </a>
-    <a href="{{ .Site.Social.linkedin }}" rel="noopener" class="no-uline no-col"> <i class="fab fa-linkedin fa-fw fa-2x"></i> </a>
-  </div>
+    <div>
+      <a href="/contact/" rel="noopener" class="no-uline no-col"> <i class="fas fa-envelope fa-fw fa-2x"></i> </a>
+      <a href="{{ .Site.Social.github }}" rel="noopener" class="no-uline no-col"> <i
+          class="fab fa-github fa-fw fa-2x"></i> </a>
+      <a href="{{ .Site.Social.linkedin }}" rel="noopener" class="no-uline no-col"> <i
+          class="fab fa-linkedin fa-fw fa-2x"></i> </a>
+    </div>
 
-</div>
+  </div>
 
 </div>
 

@@ -1,47 +1,47 @@
 <div class="portfolio__works">
 
-    <nav class="portfolio__nav">
-      <h3>Projects</h3>
-      <i>Some of my favourite projects.</i>
-      <div class="most-used-langs">
-        My most used languages according to GitHub:
-        
-        <div class="progress">
-          {{ $totalCount := .Site.Data.repoCount.totalCount }}
-          {{ range first 10 (sort .Site.Data.languages "used" "desc") }}
-          <div class="progress-item">
-              <div class="completion" style="width: {{ mul 100 (div .used $totalCount) }}%;">
-                <span class="subject"> {{ .name }} </span>
-                <span class="percent"> {{ .used }}/{{ $totalCount }} projects</span>
-              </div>
+  <nav class="portfolio__nav">
+    <h3>Projects</h3>
+    <i>Some of my favourite projects.</i>
+    <div class="most-used-langs">
+      My most used languages according to GitHub:
+
+      <div class="progress">
+        {{ $totalCount := .Site.Data.repoCount.totalCount }}
+        {{ range first 10 (sort .Site.Data.languages "used" "desc") }}
+        <div class="progress-item">
+          <div class="completion" style="width: {{ mul 100 (div .used $totalCount) }}%;">
+            <span class="subject"> {{ .name }} </span>
+            <span class="percent"> {{ .used }}/{{ $totalCount }} projects</span>
           </div>
-          {{ end }}
+        </div>
+        {{ end }}
 
-          <br>
+        <br>
 
-          <div>
-            <a href="https://github.com/Ligh7bringer/repositories" rel="noopener"> See all my projects on GitHub </a>
-          </div>
-
+        <div>
+          <a href="https://github.com/Ligh7bringer/repositories" rel="noopener"> See all my projects on GitHub </a>
         </div>
 
       </div>
-    </nav>
-
-    <div class="portfolio__showcase">
-
-      {{ range $.Site.Data.projects.data.repositoryOwner.pinnedItems.edges }}
-
-      <div class="portfolio__item">
-        <h5><a href="{{ .node.url }}"> {{ .node.name }} </a></h5>
-        <p> {{ .node.description }}</p>
-        {{ range .node.languages.nodes}}
-          <span class="prog-lang"> <i> {{ .name }} </i> </span>
-        {{ end }}
-      </div>
-
-      {{ end }}
 
     </div>
+  </nav>
+
+  <div class="portfolio__showcase">
+
+    {{ range $.Site.Data.projects.data.repositoryOwner.pinnedItems.edges }}
+
+    <div class="portfolio__item">
+      <h5><a href="{{ .node.url }}"> {{ .node.name }} </a></h5>
+      <p> {{ .node.description }}</p>
+      {{ range .node.languages.nodes}}
+      <span class="prog-lang"> <i> {{ .name }} </i> </span>
+      {{ end }}
+    </div>
+
+    {{ end }}
+
+  </div>
 
 </div>
