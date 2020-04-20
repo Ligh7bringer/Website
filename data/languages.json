@@ -1,7 +1,7 @@
 [
     {
         "name": "Java",
-        "used": 9
+        "used": 10
     },
     {
         "name": "Groovy",
@@ -9,23 +9,23 @@
     },
     {
         "name": "C",
-        "used": 9
+        "used": 10
     },
     {
         "name": "Shell",
-        "used": 5
+        "used": 8
     },
     {
         "name": "CSS",
-        "used": 6
+        "used": 7
     },
     {
         "name": "C++",
-        "used": 15
+        "used": 18
     },
     {
         "name": "Objective-C",
-        "used": 2
+        "used": 3
     },
     {
         "name": "PHP",
@@ -33,11 +33,11 @@
     },
     {
         "name": "JavaScript",
-        "used": 4
+        "used": 5
     },
     {
         "name": "Makefile",
-        "used": 7
+        "used": 8
     },
     {
         "name": "Haskell",
@@ -49,15 +49,15 @@
     },
     {
         "name": "CMake",
-        "used": 13
+        "used": 16
     },
     {
         "name": "Batchfile",
-        "used": 3
+        "used": 4
     },
     {
         "name": "GLSL",
-        "used": 3
+        "used": 4
     },
     {
         "name": "TeX",
@@ -65,7 +65,7 @@
     },
     {
         "name": "Python",
-        "used": 9
+        "used": 11
     },
     {
         "name": "Cuda",
@@ -73,7 +73,7 @@
     },
     {
         "name": "HTML",
-        "used": 4
+        "used": 5
     },
     {
         "name": "Ada",
@@ -85,6 +85,66 @@
     },
     {
         "name": "ASP",
+        "used": 1
+    },
+    {
+        "name": "M4",
+        "used": 1
+    },
+    {
+        "name": "Inno Setup",
+        "used": 1
+    },
+    {
+        "name": "Pascal",
+        "used": 1
+    },
+    {
+        "name": "SWIG",
+        "used": 1
+    },
+    {
+        "name": "Rich Text Format",
+        "used": 1
+    },
+    {
+        "name": "Objective-C++",
+        "used": 1
+    },
+    {
+        "name": "HLSL",
+        "used": 1
+    },
+    {
+        "name": "Ruby",
+        "used": 1
+    },
+    {
+        "name": "Smarty",
+        "used": 1
+    },
+    {
+        "name": "UnrealScript",
+        "used": 1
+    },
+    {
+        "name": "ShaderLab",
+        "used": 1
+    },
+    {
+        "name": "COBOL",
+        "used": 1
+    },
+    {
+        "name": "Gnuplot",
+        "used": 1
+    },
+    {
+        "name": "GDB",
+        "used": 1
+    },
+    {
+        "name": "Dockerfile",
         "used": 1
     }
 ]
