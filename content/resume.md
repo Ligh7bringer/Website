@@ -1,5 +1,5 @@
 ---
-title:
+title: Resume
 type: about
 ---
 
