@@ -33,15 +33,15 @@ description = "Svetlozar Georgiev's projects, blog posts and other stuff."
 showBorder = true
 accent = "#008081"
 css = ["css/scroll.css", "css/custom.css"]
-font = "Ubuntu"
+font = "Raleway"
 # metadata
-bio = "interests..."
+bio = "Deep Learning, Game Development, Computer Graphics, Linux, C++, GPU Programming"
 email = "s.georgiev255\\*\\*at\\*\\*gmail"
-profile = "not.yet"
+profile = "Ligh7bringer"
 enableRSS = true
 themeBuilder = true
 favicon = "favicon.png"
-logo = "logo.png"
+logo = "logo.svg"
 banner = "/static/favicon-32x32.png"
 themeColor = "b30950"
 

@@ -1,5 +1,5 @@
 ---
-title: Resume
+title: Résumé
 type: about
 ---
 
@@ -33,22 +33,9 @@ optimised for desktop PCs and mobile devices through a **responsive
 design**. **Python** was used both for the front-end (Flask) and the
 back-end (Chatterbot).
  
-**English Language School Plovdiv**, Plovdiv, Bulgaria 	*09/2010 - 07/2015*
-
-*Secondary education*
-
 ## Experience
 
 **Software Engineer**, Codeplay Software (Edinburgh) *09/2019 - Present*
-
-**Event Staff**, 
-Linton Recruitment (Edinburgh) *06/2017 - O7/2019*
-
-- Worked at different events such as weddings, conferences and dinners.
-- Worked in different positions such as waiter and cloak room attendant.
-- Was responsible for taking orders, handling dietary requirements and
-serving customers.
-- Worked in small teams and independently.
 
 ## Achievements
 
