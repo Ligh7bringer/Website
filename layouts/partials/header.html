@@ -2,24 +2,25 @@
 
   <div class="header__left">
     <a href="/" class="no-uline no-col">
-      <i class="fas fa-home fa-fw fa-2x"></i>
+      <img src="/logo.svg" alt="Logo" style="width:32px;height:32px;">
     </a>
   </div>
 
   {{ if .Site.Menus.main }}
-    <div class="header__right">
-      <nav class="header__navigation">
-          {{ range sort .Site.Menus.main }}
-            <a class="no-uline no-col" href="{{ .URL }}">{{ .Name }}</a>
-          {{ end }}
-          <a title="Toggle dark theme." class="no-uline no-col" id="themeToggle"><i class="fas fa-lightbulb"></i></a>
-      </nav>
+  <div class="header__right">
+    <nav class="header__navigation">
+      {{ range sort .Site.Menus.main }}
+      <a class="no-uline no-col" href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+      <a title="Toggle dark theme." class="no-uline no-col" id="themeToggle"><i class="fas fa-lightbulb"></i></a>
+    </nav>
   </div>
   {{ end }}
 
 </header>
 
+
 {{ if .Site.Params.showBorder }}
-  <div id="top"></div>
-  <div id="bottom"></div>
+<div id="top"></div>
+<div id="bottom"></div>
 {{ end }}

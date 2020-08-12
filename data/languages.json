@@ -1,7 +1,7 @@
 [
     {
         "name": "Java",
-        "used": 10
+        "used": 11
     },
     {
         "name": "Groovy",
@@ -141,6 +141,10 @@
     },
     {
         "name": "GDB",
+        "used": 1
+    },
+    {
+        "name": "Vim script",
         "used": 1
     },
     {
