@@ -21,7 +21,7 @@ So for my Windows CI needs I have been using [Appveyor](https://www.appveyor.com
 
 `.travis.yml`:
 
-```yml
+```yaml
 before_install:
   - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
   - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
@@ -52,7 +52,7 @@ Let's start populating our `push.yml` file.
 
 First we add our build matrix:
 
-```yml
+```yaml
 name: Build Project
 
 on: [push, pull_request]
@@ -96,7 +96,7 @@ Her's an explanation of what the sections mean:
 
 Next, we add our build steps:
 
-```yml
+```yaml
     steps:
     - uses: actions/checkout@v2
       with:
@@ -110,7 +110,7 @@ Next, we add our build steps:
 
 Now we need to set up our environment. On Windows, we need to have `cl.exe` on our path se we can set it as the compiler for CMake to use. On Linux, we need to `apt install` some packages: 
 
-```yml
+```yaml
     - name: Set Windows ENV
       if: runner.os == 'Windows'
       uses: ilammy/msvc-dev-cmd@v1
@@ -128,9 +128,9 @@ Now we need to set up our environment. On Windows, we need to have `cl.exe` on o
 
   - on Linux we just use `apt` to install our dependencies.
 
-- `run` allows us to run a shell command. To run multiple commands the `yml` syntax is a bit weird:
+- `run` allows us to run a shell command. To run multiple commands the `yaml` syntax is a bit weird:
 
-```yml
+```yaml
 run: |
   command_1
   command_2
@@ -139,7 +139,7 @@ run: |
 
 Now that we've set up our environment for both OSs, we can configure CMake and build our project:
 
-```yml
+```yaml
     - name: CMake Configure 
       run: cmake -Bbuild -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${{ matrix.config.cc }} -DCMAKE_CXX_COMPILER=${{ matrix.config.cxx }}
 

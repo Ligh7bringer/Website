@@ -10,7 +10,7 @@ tags:
 description: A quick (and dirty) tutorial on building SYCL applications with CMake 
 ---
 
-When I started working at [Codeplay](https://www.codeplay.com/) one of the first things I was recommended to do was to learn SYCL. I quickly found out that there aren't that many resources online. I eventually found an example of the usual GPU "hello, world" program - vector addition. However, I realised I had no idea how to compile it! Well, here's a quick tutorial on compiling SYCL applications with CMake so you're not as confused as I was. I chose CMake since it's probably the fastest way to get something working. 
+When I started working at [Codeplay](https://www.codeplay.com/) one of the first things I was recommended to do was to learn SYCL. I quickly found out that there aren't that many resources online. I eventually found an example of the usual GPU "hello, world" program - vector addition. However, I realised I had no idea how to compile it! Well, here's a quick tutorial on compiling SYCL applications with CMake so you're not as confused as I was. I chose CMake since it's probably the fastest way to get something working.
 
 All you should need to do this is:
 
@@ -20,7 +20,7 @@ All you should need to do this is:
 
 First, let's set up the project. My directory structure looks like this:
 
-```
+```bash
 vecadd/
 ├── cmake/
 ├── CMakeLists.txt
@@ -106,6 +106,7 @@ Now CMake knows how to find ComputeCpp! We can find it with `find_package`:
 ```cmake
 find_package(ComputeCpp REQUIRED)
 ```
+
 CMake will display an error if it can't find it for some reason since we said it was `REQUIRED`.
 
 Finally, we can create our executable:
@@ -166,7 +167,7 @@ cmake --build .
 If we did everything right we should be able to run our executable:
 
 ```bash
-./vecadd 
+./vecadd
 ```
 
 And see the following output:
