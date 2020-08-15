@@ -13,7 +13,7 @@ tags:
 
 # Setting up GitHub Actions for CMake & C++ Projects on Windows and Linux
 
-I have been using [Travis CI](https://travis-ci.com/) for my open source projects hosted on GitHub. Travis CI is great! Very easy to set up and most importantly *free*. However, since I usually try to write portable code, I like testing my C++ projects on multiple operating systems. Travis CI's Linux images and testing are great, however their Windows support - [unfortunately not so much](https://docs.travis-ci.com/user/reference/windows/). According to their docs 
+I have been using [Travis CI](https://travis-ci.com/) for my open source projects hosted on GitHub. Travis CI is great! Very easy to set up and most importantly *free*. However, since I usually try to write portable code, I like testing my C++ projects on multiple operating systems. Travis CI's Linux images and testing are great, however their Windows support - [unfortunately not so much](https://docs.travis-ci.com/user/reference/windows/). According to their docs
 
 > [...] our Windows environment is in early stages and a minimal subset of what’s available on Linux or macOS is currently supported.
 
@@ -32,7 +32,7 @@ before_install:
   - cd ${TRAVIS_BUILD_DIR}
 ```
 
-This is not the end of the world, but I would like to have a cleaner configuration. 
+This is not the end of the world, but I would like to have a cleaner configuration.
 
 ## GitHub Actions
 
@@ -82,7 +82,7 @@ jobs:
           }
 ```
 
-Her's an explanation of what the sections mean: 
+Her's an explanation of what the sections mean:
 
 - `name` is the name of our actions as it will appear on GitHub when it is running.
 
