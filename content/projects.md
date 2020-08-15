@@ -2,4 +2,8 @@
 type: portfolio
 title: Projects
 ---
-{{% projects %}}
+{{< rawhtml >}}
+
+    {{% projects %}}
+
+{{< /rawhtml >}}
