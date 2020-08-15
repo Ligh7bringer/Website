@@ -21,7 +21,7 @@
     },
     {
         "name": "C++",
-        "used": 19
+        "used": 20
     },
     {
         "name": "Objective-C",
@@ -49,7 +49,7 @@
     },
     {
         "name": "CMake",
-        "used": 17
+        "used": 18
     },
     {
         "name": "Batchfile",
@@ -81,7 +81,7 @@
     },
     {
         "name": "Lua",
-        "used": 2
+        "used": 1
     },
     {
         "name": "ASP",
