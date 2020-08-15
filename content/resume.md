@@ -7,10 +7,10 @@ type: about
 
 ## Contact Information
 
-- {{% fa-icon fas fa-envelope %}} [Use the contact form](/contact)
-- {{% fa-icon fas fa-globe-europe %}} http://www.sgeor.me
-- {{% fa-icon fab fa-linkedin %}} https://www.linkedin.com/in/sgeor255
-- {{% fa-icon fab fa-github %}} https://github.com/Ligh7bringer
+- {{< rawhtml >}} {{% fa-icon fas fa-envelope %}} {{< /rawhtml >}} [Use the contact form](/contact)
+- {{< rawhtml >}} {{% fa-icon fas fa-globe-europe %}} {{< /rawhtml >}} http://www.sgeor.me
+- {{< rawhtml >}} {{% fa-icon fab fa-linkedin %}} {{< /rawhtml >}} https://www.linkedin.com/in/sgeor255
+- {{< rawhtml >}} {{% fa-icon fab fa-github %}} {{< /rawhtml >}} https://github.com/Ligh7bringer
 
 ## Education
 
