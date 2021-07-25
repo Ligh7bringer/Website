@@ -1,19 +1,11 @@
 [
     {
-        "name": "Java",
-        "used": 11
-    },
-    {
-        "name": "Groovy",
-        "used": 1
-    },
-    {
         "name": "C",
         "used": 9
     },
     {
         "name": "Shell",
-        "used": 8
+        "used": 6
     },
     {
         "name": "CSS",
@@ -21,11 +13,11 @@
     },
     {
         "name": "C++",
-        "used": 20
+        "used": 19
     },
     {
         "name": "Objective-C",
-        "used": 3
+        "used": 4
     },
     {
         "name": "PHP",
@@ -37,7 +29,7 @@
     },
     {
         "name": "Makefile",
-        "used": 8
+        "used": 7
     },
     {
         "name": "Haskell",
@@ -45,11 +37,11 @@
     },
     {
         "name": "C#",
-        "used": 5
+        "used": 6
     },
     {
         "name": "CMake",
-        "used": 18
+        "used": 17
     },
     {
         "name": "Batchfile",
@@ -57,7 +49,7 @@
     },
     {
         "name": "GLSL",
-        "used": 5
+        "used": 6
     },
     {
         "name": "TeX",
@@ -65,7 +57,11 @@
     },
     {
         "name": "Python",
-        "used": 11
+        "used": 9
+    },
+    {
+        "name": "Java",
+        "used": 9
     },
     {
         "name": "Cuda",
@@ -77,10 +73,6 @@
     },
     {
         "name": "Ada",
-        "used": 1
-    },
-    {
-        "name": "Lua",
         "used": 1
     },
     {
@@ -148,7 +140,15 @@
         "used": 1
     },
     {
-        "name": "Dockerfile",
+        "name": "Kotlin",
+        "used": 1
+    },
+    {
+        "name": "Swift",
+        "used": 1
+    },
+    {
+        "name": "Dart",
         "used": 1
     }
 ]

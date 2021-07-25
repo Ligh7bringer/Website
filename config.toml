@@ -1,4 +1,4 @@
-baseurl = "https://www.sgeor.me/"
+baseurl = "https://www.sgeorgiev.me/"
 themesDir = "./themes/"
 languageCode = "en"
 metaDataFormat = "toml"
