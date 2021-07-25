@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: sgeor.me
-Token: 5e0d7eeef55977111c2ef7fd06031889148b08f0baee3b0c91cb8b786d814dd4
+Domain: sgeorgiev.me
+Token: 9a95b8b070dc3d843aed0c096a6b039532cfbd506440db90afd9a2f7e26bee8e
