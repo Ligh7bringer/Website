@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: sgeorgiev.me
+Domain: sgeor.netlify.app
 Token: 9a95b8b070dc3d843aed0c096a6b039532cfbd506440db90afd9a2f7e26bee8e

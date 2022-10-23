@@ -1,4 +1,4 @@
-baseurl = "https://www.sgeorgiev.me/"
+baseurl = "https://sgeor.netlify.app/"
 themesDir = "./themes/"
 languageCode = "en"
 metaDataFormat = "toml"
